@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Super Dus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-bg {
+            background-image: url('http://static.photos/food/1200x630/42');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Hero Section -->
+    <div class="hero-bg h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="text-center relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6" data-aos="fade-down">Los Super Dus</h1>
+            <p class="text-xl md:text-2xl text-white mb-8" data-aos="fade-up" data-aos-delay="200">Pollos, costillas, tacos y cervezas</p>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <a href="#menu" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">
+                    Ver Menú
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 px-4 md:px-8 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800" data-aos="fade-up">Nuestro Menú</h2>
+        
+        <!-- Pollos -->
+        <div class="mb-16" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-6 text-amber-600 border-b-2 border-amber-600 pb-2 inline-block">Pollos</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Pollo entero</h4>
+                        <span class="text-lg font-bold text-amber-600">$180</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">1/2 Pollo</h4>
+                        <span class="text-lg font-bold text-amber-600">$100</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">1/4 Pollo</h4>
+                        <span class="text-lg font-bold text-amber-600">$60</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Pollo a la leña</h4>
+                        <span class="text-lg font-bold text-amber-600">$200</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Pollo enchilado</h4>
+                        <span class="text-lg font-bold text-amber-600">$190</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Alitas BBQ</h4>
+                        <span class="text-lg font-bold text-amber-600">$120</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Pollo sin hueso</h4>
+                        <span class="text-lg font-bold text-amber-600">$140</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Costillas -->
+        <div class="mb-16" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-6 text-amber-600 border-b-2 border-amber-600 pb-2 inline-block">Costillas</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla BBQ</h4>
+                        <span class="text-lg font-bold text-amber-600">$220</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla ahumada</h4>
+                        <span class="text-lg font-bold text-amber-600">$240</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla picante</h4>
+                        <span class="text-lg font-bold text-amber-600">$230</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla con miel</h4>
+                        <span class="text-lg font-bold text-amber-600">$210</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla para dos</h4>
+                        <span class="text-lg font-bold text-amber-600">$350</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Costilla familiar</h4>
+                        <span class="text-lg font-bold text-amber-600">$450</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tacos -->
+        <div class="mb-16" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-6 text-amber-600 border-b-2 border-amber-600 pb-2 inline-block">Tacos</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de pollo</h4>
+                        <span class="text-lg font-bold text-amber-600">$90</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de costilla</h4>
+                        <span class="text-lg font-bold text-amber-600">$110</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de pastor</h4>
+                        <span class="text-lg font-bold text-amber-600">$85</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de carnitas</h4>
+                        <span class="text-lg font-bold text-amber-600">$95</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de bistec</h4>
+                        <span class="text-lg font-bold text-amber-600">$100</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tacos de chorizo</h4>
+                        <span class="text-lg font-bold text-amber-600">$80</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cervezas -->
+        <div class="mb-16" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-6 text-amber-600 border-b-2 border-amber-600 pb-2 inline-block">Cervezas</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Corona</h4>
+                        <span class="text-lg font-bold text-amber-600">$45</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Modelo</h4>
+                        <span class="text-lg font-bold text-amber-600">$50</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Victoria</h4>
+                        <span class="text-lg font-bold text-amber-600">$40</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Tecate</h4>
+                        <span class="text-lg font-bold text-amber-600">$35</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Bohemia</h4>
+                        <span class="text-lg font-bold text-amber-600">$55</span>
+                    </div>
+                </div>
+                <div class="menu-item bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Michelada</h4>
+                        <span class="text-lg font-bold text-amber-600">$70</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-800 text-white py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Contacto</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="map-pin" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dirección</h3>
+                    <p>Calle Principal #123<br>Colonia Centro<br>Ciudad de México</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="phone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Teléfono</h3>
+                    <p>55 1234 5678</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Horario</h3>
+                    <p>Lunes a Viernes: 12pm - 10pm<br>Sábado y Domingo: 11am - 11pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="facebook" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="instagram" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="twitter" class="w-6 h-6"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2023 Los Super Dus. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>
